@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.messages import HumanMessage, SystemMessage
 
 load_dotenv()  # take environment variables from .env.
 
@@ -15,16 +16,14 @@ llm_openai = ChatOpenAI(
     timeout=None,
     max_retries=2,
 )
-llm_openai_V2 = ChatOpenAI(
-    model="gpt-5-turbo",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-)
+
 llm_gemini = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
-message = "What is the capital of France?"
+system_msg= SystemMessage(content="You are a helpful funny assistant that answers the questions in a humorous way.")
+human_msg= HumanMessage(content="Who is the president of the United States as of october 2023?")
+
+message = [system_msg, human_msg]
+
 response_openai = llm_openai.invoke(message)
 response_gemini = llm_gemini.invoke(message)
 
@@ -33,3 +32,4 @@ print(response_openai.content)
 
 print("Response from Gemini:")
 print(response_gemini.content)
+

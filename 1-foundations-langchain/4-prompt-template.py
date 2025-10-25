@@ -33,6 +33,8 @@ template_object = template.invoke(
     {"context": "The capital of France is Paris.", 
      "question": "What is the capital of India?"}
 )
+print("Template Object:")
+print(template_object)
 response_openai = llm_openai.invoke(template_object)
 response_gemini = llm_gemini.invoke(template_object)
 

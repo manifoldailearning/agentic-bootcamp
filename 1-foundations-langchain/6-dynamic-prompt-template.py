@@ -11,6 +11,7 @@ llm_gemini = ChatGoogleGenerativeAI(model="gemini-2.5-flash",
                                     max_output_tokens=2048)
 
 
+
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system",

@@ -15,13 +15,7 @@ llm_openai = ChatOpenAI(
     timeout=None,
     max_retries=2,
 )
-llm_openai_V2 = ChatOpenAI(
-    model="gpt-5-turbo",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-)
+
 llm_gemini = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
 message = "What is the capital of France?"
@@ -33,3 +27,4 @@ print(response_openai.content)
 
 print("Response from Gemini:")
 print(response_gemini.content)
+

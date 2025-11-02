@@ -35,7 +35,11 @@ class State(TypedDict):
     messages: Annotated[list, add_messages]
 
 def llm_node(state: State) -> State:
+    print("Messages passed to LLM:")
+    print(state["messages"])
     result = llm_gemini.invoke(state["messages"])
+    print("Intermediate Result from LLM:")
+    print(result)
     return {"messages":result}
 
 builder = StateGraph(State)
@@ -54,7 +58,7 @@ input = {
 }
 
 input = {
-    "messages": [HumanMessage(content="What is the Fixed deposit interest for 100000 INR for 1 year at the current RBI repo rate?")]
+    "messages": [HumanMessage(content="Calculate the Fixed deposit interest for 100000 INR for 1 year at the current RBI repo rate?")]
 }
 result = graph.invoke(input)
 print("Final Result:")

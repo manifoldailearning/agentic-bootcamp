@@ -5,6 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage, AIMessage, HumanMessage, BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
+import pprint
   # take environment variables from .env
 
 load_dotenv()
@@ -30,6 +31,8 @@ def ingest_user(state: GraphState) -> GraphState:
     messages = list(state.get("messages",[]))
     user_text = state["input"]
     messages.append(HumanMessage(content=user_text))
+    # print("Ingested user message:")
+    # pprint.pp(messages)
     return {"messages":messages}
 
 # chat node
@@ -48,8 +51,10 @@ def chat(state: GraphState) -> GraphState:
 
 # update summary node
 SUMMARY_PROMPT = ChatPromptTemplate.from_messages([
-    SystemMessage(content="You are an expert at creating concise summaries of conversations."),
-    HumanMessage(content="Given the following conversation history, provide a concise summary by focussing on key facts, preference and decisions:\n{conversation_history}")
+    ("system", "You are an expert at creating concise summaries of conversations."),
+    ("human",
+     "Given the following conversation history, provide a concise summary focusing "
+     "on key facts, preferences, and decisions:\n\n{conversation_history}")
 ])
 THRESHOLD = 2  # max number of messages before summarization
 
@@ -58,12 +63,12 @@ def summarize_if_long(state: GraphState) -> GraphState:
     summary = state.get("summary","")
 
     # check if messages length exceeds threshold
-    if len(messages) < THRESHOLD:  # threshold of 6 messages
+    if len(messages) < THRESHOLD: 
         return {"summary": summary}  # no update
 
     # generate new summary
     conversation_text = "\n".join([f"{msg.type}: {msg.content}" for msg in messages])
-    prompt = SUMMARY_PROMPT.format_prompt(conversation_history=conversation_text)
+    prompt = SUMMARY_PROMPT.format_prompt(conversation_history=conversation_text).to_messages()
     response = llm_gemini.invoke(prompt) # generate the conversation summary
     new_summary = response.content
 
@@ -86,25 +91,26 @@ app = builder.compile(checkpointer=checkpointer)
 def run_turn(user_input: str, thread_id: str):
     # initial state
     result = app.invoke(
-        {"input": user_input,
-         "messages": []},
+        {"input": user_input},
          config = {"configurable":{"thread_id": thread_id}}
     )
     return result
 
 if __name__ == "__main__":
     thread_id = "user-5678"
-    s1 = run_turn("Hi, I am planning a 5 day trip to Japan in April. I love Sushi and historical sites.", thread_id)
+    print("Turn 1 : Hi, I am planning a 5 day trip to Penang in April. I love Nasi Lemak and historical sites.")
+    s1 = run_turn("Hi, I am planning a 5 day trip to Penang in April. I love Nasi Lemak and historical sites.", thread_id)
 
     print("After Turn 1:")
     print(s1["messages"][-1].content)
 
     # Turn 2
+    print("Turn 2 : Can you suggest an itinerary for me?")
     s2 = run_turn("Can you suggest an itinerary for me?", thread_id)
     print("\nAfter Turn 2:")
     print(s2["messages"][-1].content)
-
-    s3 = run_turn("Also suggest some local delicacies I should try.", thread_id)
+    print("Turn 3 : Also suggest some other local delicacies I should try.")
+    s3 = run_turn("Also suggest some other local delicacies I should try.", thread_id)
     print("\nAfter Turn 3:")
     print(s3["messages"][-1].content)
 

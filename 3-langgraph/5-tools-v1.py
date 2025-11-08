@@ -40,7 +40,7 @@ def llm_node(state: State) -> State:
     result = llm_gemini.invoke(state["messages"])
     print("Intermediate Result from LLM:")
     print(result)
-    return {"messages":result}
+    return {"messages":[result]}
 
 builder = StateGraph(State)
 builder.add_node("model", llm_node)

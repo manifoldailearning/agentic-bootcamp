@@ -5,7 +5,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage, AIMessage, HumanMessage, BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
-import pprint
   # take environment variables from .env
 
 load_dotenv()

@@ -12,5 +12,5 @@ splitter = RecursiveCharacterTextSplitter(
 splitted_docs = splitter.split_documents(docs)
 print(splitted_docs)
 for s,n in zip(splitted_docs,range(len(splitted_docs))):
-    print(f"Chunk {n+1} --> {s.page_content}")
+    print(f"Chunk {n} --> {s.page_content} --> Len is {len(s.page_content)}")
     print("---")

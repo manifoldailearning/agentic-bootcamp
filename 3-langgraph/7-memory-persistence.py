@@ -48,6 +48,7 @@ from dotenv import load_dotenv
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage
+import uuid
 
 # Load environment variables
 load_dotenv()
@@ -89,7 +90,9 @@ workflow.add_edge("chat", END)
 if __name__ == "__main__":
     with SqliteSaver.from_conn_string("checkpoints.db") as checkpointer:
         app = workflow.compile(checkpointer=checkpointer)
-        THREAD_ID = "user-1" # modify per user/session
+        user_id = "user1@gmail.com" # modify per user/session
+        thread_id = uuid.uuid4().hex  # New thread for fresh conversation
+        session_id = f"{user_id}-{thread_id}"
 
         print("Type 'exit' to stop.\n")
         while True:
@@ -100,7 +103,7 @@ if __name__ == "__main__":
             state = {"messages": [], "user_input": user_text}
             result = app.invoke(
                 state,
-                config={"configurable": {"thread_id": THREAD_ID}},
+                config={"configurable": {"thread_id": session_id}},
             )
             # get the model’s latest message (the last in merged list)
             print("AI:", result["messages"][-1].content)

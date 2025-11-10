@@ -41,7 +41,7 @@ vector_store = PGVector.from_documents(
 
 #query the vector store
 query = "Software Engineer"
-results = vector_store.similarity_search(query, k=4)
+results = vector_store.similarity_search(query, k=10)
 for result in results:
     print(result.page_content)
     print("---")

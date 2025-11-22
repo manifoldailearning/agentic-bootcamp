@@ -51,7 +51,7 @@ vector_store = PGVector.from_documents(
 
 retriever = vector_store.as_retriever(search_kwargs= {"k":2})
 
-query = "What are metrics?"
+query = "NVIDIA exam"
 
 docs = retriever.invoke(query)
 

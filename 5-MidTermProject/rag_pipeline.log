@@ -1,0 +1,69 @@
+2025-11-23 21:42:57,459 - root - INFO - Running the RAG pipeline for question: what is agentic ai ?
+2025-11-23 21:43:01,823 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:43:42,580 - root - INFO - Running the RAG pipeline for question: what is agentic ai ?
+2025-11-23 21:43:43,371 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:43:43,387 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-23 21:43:44,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:43:44,650 - root - INFO - Retrieval time: 2070 milliseconds
+2025-11-23 21:43:44,651 - root - INFO - Built prompt for model: gpt-5.1-nano
+2025-11-23 21:43:44,651 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: what is agentic ai ?
+
+Answer:
+
+2025-11-23 21:43:44,651 - root - INFO - Initializing the chat model for gpt-5.1-nano
+2025-11-23 21:43:44,688 - root - INFO - Calling the chat model for gpt-5.1-nano
+2025-11-23 21:43:45,821 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-11-23 21:45:16,868 - root - INFO - Running the RAG pipeline for question: what is agentic ai ?
+2025-11-23 21:45:18,588 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:45:18,604 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-23 21:45:19,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:45:19,705 - root - INFO - Retrieval time: 2837 milliseconds
+2025-11-23 21:45:19,706 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-23 21:45:19,706 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: what is agentic ai ?
+
+Answer:
+
+2025-11-23 21:45:19,706 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-23 21:45:19,746 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-23 21:45:21,508 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 21:45:21,514 - root - INFO - LLM time: 1807 milliseconds
+2025-11-23 21:45:21,514 - root - INFO - Response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-23 21:46:23,090 - root - INFO - Running the RAG pipeline for question: what is agentic ai ?
+2025-11-23 21:46:24,408 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:46:24,440 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-23 21:46:24,903 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 21:46:24,905 - root - INFO - Retrieval time: 1815 milliseconds
+2025-11-23 21:46:24,905 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-23 21:46:24,905 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: what is agentic ai ?
+
+Answer:
+
+2025-11-23 21:46:24,905 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-23 21:46:24,948 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-23 21:46:26,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 21:46:26,801 - root - INFO - LLM time: 1895 milliseconds
+2025-11-23 21:46:26,801 - root - INFO - Response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multiple steps using various tools to achieve a higher-level objective, all with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.

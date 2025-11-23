@@ -15,8 +15,9 @@ import config
 from langchain_openai import OpenAIEmbeddings
 from langchain_redis import RedisVectorStore
 from langchain_core.documents import Document
-
-
+from dotenv import load_dotenv
+import time
+load_dotenv()
 # Redis connection URL from configuration
 # Format: redis://[username]:[password]@[host]:[port] or redis://[host]:[port]
 REDIS_URL = config.REDIS_URL
@@ -81,11 +82,17 @@ def get_vectorstore():
         - The index must have been created previously using add_documents()
         - Multiple calls return independent instances (stateless)
     """
-    return RedisVectorStore(
-        embedding=embedding_model,
-        redis_url=REDIS_URL,
-        index_name=config.INDEX_NAME,
-    )
+    # try except to handle the error if the index name is not found
+    try:
+        return RedisVectorStore(
+            embeddings=embedding_model,
+            redis_url=REDIS_URL,
+            index_name=config.INDEX_NAME,
+        )
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+
 
 
 def retrieve_documents(query: str, k: int = 3):
@@ -99,9 +106,9 @@ def retrieve_documents(query: str, k: int = 3):
     Args:
         query (str): The search query text. This will be embedded and compared
                      against all stored document embeddings.
-        k (int, optional): The number of most similar documents to retrieve.
+        k (int, optional): The number of most similar documents (chunks) to retrieve.
                           Defaults to 3. Higher values return more results but
-                          may include less relevant documents.
+                          may include less relevant chunks.
     
     Returns:
         list[str]: A list of the page_content (text) from the k most similar documents.
@@ -112,7 +119,15 @@ def retrieve_documents(query: str, k: int = 3):
         >>> print(results[0])  # Most similar document text
     """
     # Fetch the instance of the vector store connected to Redis
-    vectorstore = get_vectorstore()
+    # Retry logic to handle the error in redis
+    for i in range(3):
+        try:
+            vectorstore = get_vectorstore()
+            break
+        except Exception as e:
+            print(f"Error: {e}")
+            time.sleep(1)
+    # vectorstore = get_vectorstore()
     
     # Perform similarity search: converts query to embedding and finds k nearest neighbors
     # Returns Document objects sorted by similarity (highest similarity first)

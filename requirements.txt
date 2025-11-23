@@ -10,3 +10,4 @@ langchain_google_genai
 langgraph-checkpoint-sqlite
 pypdf
 langchain-postgres
+langchain_redis

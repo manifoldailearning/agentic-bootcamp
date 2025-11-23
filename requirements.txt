@@ -11,3 +11,4 @@ langgraph-checkpoint-sqlite
 pypdf
 langchain-postgres
 langchain_redis
+azure-ai-documentintelligence

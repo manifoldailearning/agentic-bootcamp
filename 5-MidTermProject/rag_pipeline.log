@@ -67,3 +67,26 @@ Answer:
 2025-11-23 21:46:26,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-23 21:46:26,801 - root - INFO - LLM time: 1895 milliseconds
 2025-11-23 21:46:26,801 - root - INFO - Response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multiple steps using various tools to achieve a higher-level objective, all with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-23 22:01:42,268 - root - INFO - Running the RAG pipeline for question: what is 2+2
+2025-11-23 22:01:43,119 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 22:01:43,137 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-23 22:01:43,697 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-23 22:01:43,706 - root - INFO - Retrieval time: 1437 milliseconds
+2025-11-23 22:01:43,706 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-23 22:01:43,706 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Multi-agent System: An architecture involving two or more specialized AI agents that communicate and collaborate under a supervisory agent or orchestration framework to complete a single, large workflow.
+
+Reasoning: The cognitive process, often driven by a Large Language Model (LLM), where the AI agent draws conclusions, makes decisions, and formulates a plan of action based on the perceived information and its overall goal.
+
+Orchestration: The coordination and management of multiple AI agents, each often specializing in a different role or sub-task, to work collaboratively and synchronously towards a single, complex objective.
+
+
+Question: what is 2+2
+
+Answer:
+
+2025-11-23 22:01:43,706 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-23 22:01:43,740 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-23 22:01:45,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 22:01:45,060 - root - INFO - LLM time: 1354 milliseconds
+2025-11-23 22:01:45,060 - root - INFO - Response: 2 + 2 equals 4.

@@ -23,8 +23,12 @@ response_openai = llm_openai.invoke(message)
 response_gemini = llm_gemini.invoke(message)
 
 print("Response from OpenAI:")
-print(response_openai.content)
+print(response_openai)
+#display type
+print(type(response_openai))
 
 print("Response from Gemini:")
-print(response_gemini.content)
+print(response_gemini)
+#display type
+print(type(response_gemini))
 

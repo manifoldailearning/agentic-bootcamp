@@ -23,5 +23,5 @@ def _get_chat(model_name:str) -> ChatOpenAI:
 def call(model_name:str, prompt: str) -> str:
     chat = _get_chat(model_name)
     logging.info(f"Calling the chat model for {model_name}")
-    response:AIMessage = chat.invoke(prompt)
+    response:AIMessage = chat.invoke(prompt) 
     return response.content

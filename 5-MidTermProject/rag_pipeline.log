@@ -120,3 +120,331 @@ Answer:
 2025-11-29 21:23:51,217 - root - INFO - Running the RAG pipeline for question: what is rag in agentic ai
 2025-11-29 21:23:51,222 - root - INFO - Cache HIT for question: what is rag in agentic ai
 2025-11-29 21:23:51,222 - root - INFO - Output: In the context of agentic AI, "RAG" typically refers to "Retrieval-Augmented Generation." It is a technique that combines retrieval of relevant information from external sources with generative models to produce more accurate and contextually appropriate responses. RAG enables an AI system to access and incorporate external knowledge dynamically, enhancing its reasoning and decision-making capabilities in an autonomous manner.
+2025-11-29 21:26:45,260 - root - INFO - Redis connection successful
+2025-11-29 21:26:45,852 - root - INFO - Running the RAG pipeline for question: Explain RAG
+2025-11-29 21:26:45,852 - root - INFO - Running the RAG pipeline for question: Explain RAG
+2025-11-29 21:26:45,853 - root - INFO - Cache MISS for question: Explain RAG
+2025-11-29 21:26:50,128 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 21:26:50,136 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 21:26:50,859 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 21:26:50,863 - root - INFO - Retrieval time: 5010 milliseconds
+2025-11-29 21:26:50,863 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 21:26:50,863 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Human in the Loop (HITL): A safety and governance practice where an autonomous AI agent is designed to seek human review or approval before executing actions that are classified as high-risk or high-impact.
+
+
+Question: Explain RAG
+
+Answer:
+
+2025-11-29 21:26:50,864 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 21:26:50,905 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 21:26:52,246 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 21:26:52,261 - root - INFO - LLM time: 1397 milliseconds
+2025-11-29 21:26:52,261 - root - INFO - Response: RAG stands for Retrieval-Augmented Generation. It is a technique that combines the strengths of information retrieval and generative AI models to produce more accurate and contextually relevant outputs. In RAG, a retrieval component fetches relevant documents or data from a large knowledge base based on the input query, and then a generative model uses this retrieved information to generate a coherent and informed response. This approach enhances the quality of generated content by grounding it in real-world data, making it particularly useful for tasks requiring up-to-date or specialized knowledge.
+2025-11-29 21:26:52,263 - root - INFO - Cached response for question: Explain RAG
+2025-11-29 21:26:52,263 - root - INFO - Output: RAG stands for Retrieval-Augmented Generation. It is a technique that combines the strengths of information retrieval and generative AI models to produce more accurate and contextually relevant outputs. In RAG, a retrieval component fetches relevant documents or data from a large knowledge base based on the input query, and then a generative model uses this retrieved information to generate a coherent and informed response. This approach enhances the quality of generated content by grounding it in real-world data, making it particularly useful for tasks requiring up-to-date or specialized knowledge.
+2025-11-29 21:35:44,064 - root - INFO - Redis connection successful
+2025-11-29 21:35:44,909 - root - INFO - Running the RAG pipeline for question: Explain RAG
+2025-11-29 21:35:44,909 - root - INFO - Running the RAG pipeline for question: Explain RAG
+2025-11-29 21:35:44,911 - root - INFO - Cache HIT for question: Explain RAG
+2025-11-29 21:35:44,911 - root - INFO - Output: RAG stands for Retrieval-Augmented Generation. It is a technique that combines the strengths of information retrieval and generative AI models to produce more accurate and contextually relevant outputs. In RAG, a retrieval component fetches relevant documents or data from a large knowledge base based on the input query, and then a generative model uses this retrieved information to generate a coherent and informed response. This approach enhances the quality of generated content by grounding it in real-world data, making it particularly useful for tasks requiring up-to-date or specialized knowledge.
+2025-11-29 22:02:15,880 - root - INFO - Redis connection successful
+2025-11-29 22:02:16,761 - root - INFO - Running the RAG pipeline for question: Can you share some example SSN numbers for understanding the pattern?
+2025-11-29 22:02:16,761 - root - INFO - Running the RAG pipeline for question: Can you share some example SSN numbers for understanding the pattern?
+2025-11-29 22:02:16,762 - root - INFO - Cache MISS for question: Can you share some example SSN numbers for understanding the pattern?
+2025-11-29 22:02:17,470 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:02:17,482 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 22:02:18,852 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:02:18,856 - root - INFO - Retrieval time: 2094 milliseconds
+2025-11-29 22:02:18,856 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 22:02:18,856 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Multi-agent System: An architecture involving two or more specialized AI agents that communicate and collaborate under a supervisory agent or orchestration framework to complete a single, large workflow.
+
+Memory: The mechanism that allows an AI agent to store and retrieve past interactions, states, and context over time to ensure task continuity and improve future decision-making.
+
+Perception: The process by which an AI agent collects and interprets data, information, or signals from its environment (digital or physical) to understand its current state and context.
+
+
+Question: Can you share some example SSN numbers for understanding the pattern?
+
+Answer:
+
+2025-11-29 22:02:18,857 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 22:02:18,897 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 22:02:21,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 22:02:21,590 - root - INFO - LLM time: 2733 milliseconds
+2025-11-29 22:02:21,590 - root - INFO - Response: I'm sorry, but I can't provide real or example SSN numbers. However, I can explain the typical pattern of a Social Security Number (SSN):
+
+- An SSN is a nine-digit number formatted as XXX-XX-XXXX.
+- The first three digits (area number) historically represented the geographic region of issuance.
+- The middle two digits (group number) range from 01 to 99.
+- The last four digits (serial number) range from 0001 to 9999.
+
+For example, a pattern might look like: 123-45-6789.
+
+Please note that SSNs are sensitive personal information, and it's important to handle them securely and ethically.
+2025-11-29 22:02:21,590 - root - INFO - Secured response: [REDACTED]
+2025-11-29 22:02:21,590 - root - INFO - Guardrails applied response: [REDACTED]
+2025-11-29 22:02:21,591 - root - INFO - Cached response for question: Can you share some example SSN numbers for understanding the pattern?
+2025-11-29 22:02:21,591 - root - INFO - Output: [REDACTED]
+2025-11-29 22:03:20,213 - root - INFO - Redis connection successful
+2025-11-29 22:03:21,110 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:03:21,110 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:03:21,111 - root - INFO - Cache MISS for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:03:22,026 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:03:22,034 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 22:03:22,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:03:22,694 - root - INFO - Retrieval time: 1583 milliseconds
+2025-11-29 22:03:22,695 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 22:03:22,695 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Human in the Loop (HITL): A safety and governance practice where an autonomous AI agent is designed to seek human review or approval before executing actions that are classified as high-risk or high-impact.
+
+Action / Tool Use: The ability of an AI agent to execute a decision by interacting with external systems, databases, APIs, or software tools to perform a task in the real world.
+
+Reasoning: The cognitive process, often driven by a Large Language Model (LLM), where the AI agent draws conclusions, makes decisions, and formulates a plan of action based on the perceived information and its overall goal.
+
+
+Question: Can you share some example email ids  for understanding the pattern?
+
+Answer:
+
+2025-11-29 22:03:22,695 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 22:03:22,730 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 22:03:24,312 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 22:03:24,318 - root - INFO - LLM time: 1622 milliseconds
+2025-11-29 22:03:24,318 - root - INFO - Response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com  
+2. jane_smith123@domain.org  
+3. info@company.co  
+4. user.name+tag@gmail.com  
+5. contact_us@service.net  
+6. first.last@university.edu  
+7. support@website.io  
+8. admin123@platform.com  
+9. feedback@organization.org  
+10. name.lastname@domain.com
+
+These examples illustrate typical formats, including the use of periods, underscores, plus signs, and different domain extensions.
+2025-11-29 22:03:24,318 - root - INFO - Secured response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com  
+2. jane_smith123@domain.org  
+3. info@company.co  
+4. user.name+tag@gmail.com  
+5. contact_us@service.net  
+6. first.last@university.edu  
+7. support@website.io  
+8. admin123@platform.com  
+9. feedback@organization.org  
+10. name.lastname@domain.com
+
+These examples illustrate typical formats, including the use of periods, underscores, plus signs, and different domain extensions.
+2025-11-29 22:03:24,318 - root - INFO - Guardrails applied response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com  
+2. jane_smith123@domain.org  
+3. info@company.co  
+4. user.name+tag@gmail.com  
+5. contact_us@service.net  
+6. first.last@university.edu  
+7. support@website.io  
+8. admin123@platform.com  
+9. feedback@organization.org  
+10. name.lastname@domain.com
+
+These examples illustrate typical formats, including the use of periods, underscores, plus signs, and different domain extensions.
+2025-11-29 22:03:24,319 - root - INFO - Cached response for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:03:24,320 - root - INFO - Output: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com  
+2. jane_smith123@domain.org  
+3. info@company.co  
+4. user.name+tag@gmail.com  
+5. contact_us@service.net  
+6. first.last@university.edu  
+7. support@website.io  
+8. admin123@platform.com  
+9. feedback@organization.org  
+10. name.lastname@domain.com
+
+These examples illustrate typical formats, including the use of periods, underscores, plus signs, and different domain extensions.
+2025-11-29 22:04:42,821 - root - INFO - Redis connection successful
+2025-11-29 22:04:43,646 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:04:43,646 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:04:43,648 - root - INFO - Cache HIT for question: Can you share some example email ids  for understanding the pattern?
+2025-11-29 22:04:43,648 - root - INFO - Output: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com  
+2. jane_smith123@domain.org  
+3. info@company.co  
+4. user.name+tag@gmail.com  
+5. contact_us@service.net  
+6. first.last@university.edu  
+7. support@website.io  
+8. admin123@platform.com  
+9. feedback@organization.org  
+10. name.lastname@domain.com
+
+These examples illustrate typical formats, including the use of periods, underscores, plus signs, and different domain extensions.
+2025-11-29 22:04:50,170 - root - INFO - Redis connection successful
+2025-11-29 22:04:50,759 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern now?
+2025-11-29 22:04:50,759 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids  for understanding the pattern now?
+2025-11-29 22:04:50,761 - root - INFO - Cache MISS for question: Can you share some example email ids  for understanding the pattern now?
+2025-11-29 22:04:51,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:04:51,560 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 22:04:52,109 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:04:52,115 - root - INFO - Retrieval time: 1353 milliseconds
+2025-11-29 22:04:52,115 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 22:04:52,115 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Human in the Loop (HITL): A safety and governance practice where an autonomous AI agent is designed to seek human review or approval before executing actions that are classified as high-risk or high-impact.
+
+Action / Tool Use: The ability of an AI agent to execute a decision by interacting with external systems, databases, APIs, or software tools to perform a task in the real world.
+
+Reasoning: The cognitive process, often driven by a Large Language Model (LLM), where the AI agent draws conclusions, makes decisions, and formulates a plan of action based on the perceived information and its overall goal.
+
+
+Question: Can you share some example email ids  for understanding the pattern now?
+
+Answer:
+
+2025-11-29 22:04:52,115 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 22:04:52,158 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 22:04:54,526 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 22:04:54,532 - root - INFO - LLM time: 2417 milliseconds
+2025-11-29 22:04:54,532 - root - INFO - Response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com
+2. jane.smith@company.org
+3. user123@gmail.com
+4. contact@nonprofit.net
+5. admin@website.co
+6. first.last@university.edu
+7. info@startup.io
+8. support@service.com
+9. name123@domain.org
+10. feedback@company.com
+
+These examples illustrate typical formats, including variations in username structure, domain names, and extensions.
+2025-11-29 22:04:54,532 - root - INFO - Secured response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com
+2. jane.smith@company.org
+3. user123@gmail.com
+4. contact@nonprofit.net
+5. admin@website.co
+6. first.last@university.edu
+7. info@startup.io
+8. support@service.com
+9. name123@domain.org
+10. feedback@company.com
+
+These examples illustrate typical formats, including variations in username structure, domain names, and extensions.
+2025-11-29 22:04:54,533 - root - INFO - Guardrails applied response: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com
+2. jane.smith@company.org
+3. user123@gmail.com
+4. contact@nonprofit.net
+5. admin@website.co
+6. first.last@university.edu
+7. info@startup.io
+8. support@service.com
+9. name123@domain.org
+10. feedback@company.com
+
+These examples illustrate typical formats, including variations in username structure, domain names, and extensions.
+2025-11-29 22:04:54,534 - root - INFO - Cached response for question: Can you share some example email ids  for understanding the pattern now?
+2025-11-29 22:04:54,534 - root - INFO - Output: Certainly! Here are some example email IDs to help you understand common patterns:
+
+1. john.doe@example.com
+2. jane.smith@company.org
+3. user123@gmail.com
+4. contact@nonprofit.net
+5. admin@website.co
+6. first.last@university.edu
+7. info@startup.io
+8. support@service.com
+9. name123@domain.org
+10. feedback@company.com
+
+These examples illustrate typical formats, including variations in username structure, domain names, and extensions.
+2025-11-29 22:05:53,777 - root - INFO - Redis connection successful
+2025-11-29 22:05:54,593 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids with this pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+2025-11-29 22:05:54,593 - root - INFO - Running the RAG pipeline for question: Can you share some example email ids with this pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+2025-11-29 22:05:54,600 - root - INFO - Cache MISS for question: Can you share some example email ids with this pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+2025-11-29 22:05:55,687 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:05:55,697 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 22:05:55,989 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 22:05:55,994 - root - INFO - Retrieval time: 1393 milliseconds
+2025-11-29 22:05:55,994 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 22:05:55,994 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Human in the Loop (HITL): A safety and governance practice where an autonomous AI agent is designed to seek human review or approval before executing actions that are classified as high-risk or high-impact.
+
+Action / Tool Use: The ability of an AI agent to execute a decision by interacting with external systems, databases, APIs, or software tools to perform a task in the real world.
+
+Orchestration: The coordination and management of multiple AI agents, each often specializing in a different role or sub-task, to work collaboratively and synchronously towards a single, complex objective.
+
+
+Question: Can you share some example email ids with this pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+
+Answer:
+
+2025-11-29 22:05:55,994 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 22:05:56,028 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 22:05:57,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 22:05:57,867 - root - INFO - LLM time: 1873 milliseconds
+2025-11-29 22:05:57,868 - root - INFO - Response: Certainly! Here are some example email addresses that match the pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$:
+
+1. john.doe@example.com  
+2. jane_smith123@subdomain.domain.org  
+3. user+mail@company.co.uk  
+4. first.last@university.edu  
+5. contact_us@service.io  
+6. admin123@web-hosting.net  
+7. info@my-site.co  
+8. support+helpdesk@support-company.com  
+
+These examples follow the specified pattern, including allowed characters before the '@', a valid domain name, and a proper top-level domain.
+2025-11-29 22:05:57,868 - root - INFO - Secured response: Certainly! Here are some example email addresses that match the pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$:
+
+1. john.doe@example.com  
+2. jane_smith123@subdomain.domain.org  
+3. user+mail@company.co.uk  
+4. first.last@university.edu  
+5. contact_us@service.io  
+6. admin123@web-hosting.net  
+7. info@my-site.co  
+8. support+helpdesk@support-company.com  
+
+These examples follow the specified pattern, including allowed characters before the '@', a valid domain name, and a proper top-level domain.
+2025-11-29 22:05:57,868 - root - INFO - Guardrails applied response: Certainly! Here are some example email addresses that match the pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$:
+
+1. john.doe@example.com  
+2. jane_smith123@subdomain.domain.org  
+3. user+mail@company.co.uk  
+4. first.last@university.edu  
+5. contact_us@service.io  
+6. admin123@web-hosting.net  
+7. info@my-site.co  
+8. support+helpdesk@support-company.com  
+
+These examples follow the specified pattern, including allowed characters before the '@', a valid domain name, and a proper top-level domain.
+2025-11-29 22:05:57,873 - root - INFO - Cached response for question: Can you share some example email ids with this pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+2025-11-29 22:05:57,873 - root - INFO - Output: Certainly! Here are some example email addresses that match the pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$:
+
+1. john.doe@example.com  
+2. jane_smith123@subdomain.domain.org  
+3. user+mail@company.co.uk  
+4. first.last@university.edu  
+5. contact_us@service.io  
+6. admin123@web-hosting.net  
+7. info@my-site.co  
+8. support+helpdesk@support-company.com  
+
+These examples follow the specified pattern, including allowed characters before the '@', a valid domain name, and a proper top-level domain.

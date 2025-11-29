@@ -12,13 +12,15 @@ from cache_store import get as get_cache, set as set_cache
 from retrieval import retrieve_context
 from router import build_prompt
 from llm_client import call as llm_call
+from postprocess import secured_output
+from guardrails import apply_guardrails
 
 def run_pipeline(question:str):
     logging.info(f"Running the RAG pipeline for question: {question}")
 
     # step 1: check the cache
     cached_response = get_cache(question)
-    if cached_response:
+    if cached_response: # if not None
         logging.info(f"Cache HIT for question: {question}")
         print(f"Cache HIT for question: {question}")
         return cached_response
@@ -45,7 +47,10 @@ def run_pipeline(question:str):
     llm_latency = int(llm_time * 1000) # convert to milliseconds
     logging.info(f"LLM time: {llm_latency} milliseconds")
     logging.info(f"Response: {response}")
-
+    response = secured_output(response)
+    logging.info(f"Secured response: {response}")
+    response = apply_guardrails(response)
+    logging.info(f"Guardrails applied response: {response}")
     # step 5: cache the response
     set_cache(question, response)
     logging.info(f"Cached response for question: {question}")

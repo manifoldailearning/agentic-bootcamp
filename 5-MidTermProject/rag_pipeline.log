@@ -90,3 +90,28 @@ Answer:
 2025-11-23 22:01:45,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-23 22:01:45,060 - root - INFO - LLM time: 1354 milliseconds
 2025-11-23 22:01:45,060 - root - INFO - Response: 2 + 2 equals 4.
+2025-11-29 20:08:57,731 - root - INFO - Running the RAG pipeline for question: what is agentic
+2025-11-29 20:09:03,250 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 20:10:29,423 - root - INFO - Running the RAG pipeline for question: what is agentic
+2025-11-29 20:10:30,940 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 20:10:30,948 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-29 20:10:31,986 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-29 20:10:31,991 - root - INFO - Retrieval time: 2567 milliseconds
+2025-11-29 20:10:31,991 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-29 20:10:31,991 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+
+Question: what is agentic
+
+Answer:
+
+2025-11-29 20:10:31,991 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-29 20:10:32,026 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-29 20:10:34,307 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 20:10:34,314 - root - INFO - LLM time: 2322 milliseconds
+2025-11-29 20:10:34,314 - root - INFO - Response: Agentic refers to the characteristic of being capable of autonomous decision-making, reasoning, planning, and taking actions independently to achieve goals. In the context of AI, agentic describes systems that can set sub-goals, operate with minimal human intervention, and adapt their behavior to accomplish complex tasks.

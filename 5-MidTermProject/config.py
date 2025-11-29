@@ -7,3 +7,6 @@ INDEX_NAME = "documents"
 DEFAULT_MODEL = "gpt-4.1-nano"
 TEMPERATURE = 0.2
 MAX_TOKENS = 512
+
+# Cache
+CACHE_TTL_SECONDS = 1800 # 30 minutes

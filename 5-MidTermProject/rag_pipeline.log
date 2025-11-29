@@ -115,3 +115,8 @@ Answer:
 2025-11-29 20:10:34,307 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-29 20:10:34,314 - root - INFO - LLM time: 2322 milliseconds
 2025-11-29 20:10:34,314 - root - INFO - Response: Agentic refers to the characteristic of being capable of autonomous decision-making, reasoning, planning, and taking actions independently to achieve goals. In the context of AI, agentic describes systems that can set sub-goals, operate with minimal human intervention, and adapt their behavior to accomplish complex tasks.
+2025-11-29 21:23:50,321 - root - INFO - Redis connection successful
+2025-11-29 21:23:51,217 - root - INFO - Running the RAG pipeline for question: what is rag in agentic ai
+2025-11-29 21:23:51,217 - root - INFO - Running the RAG pipeline for question: what is rag in agentic ai
+2025-11-29 21:23:51,222 - root - INFO - Cache HIT for question: what is rag in agentic ai
+2025-11-29 21:23:51,222 - root - INFO - Output: In the context of agentic AI, "RAG" typically refers to "Retrieval-Augmented Generation." It is a technique that combines retrieval of relevant information from external sources with generative models to produce more accurate and contextually appropriate responses. RAG enables an AI system to access and incorporate external knowledge dynamically, enhancing its reasoning and decision-making capabilities in an autonomous manner.

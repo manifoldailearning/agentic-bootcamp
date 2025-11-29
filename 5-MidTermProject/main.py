@@ -1,8 +1,6 @@
 import time
 import argparse
 import logging
-from cache_store import get as get_cache, set as set_cache
-
 #setup logging
 logging.basicConfig(level=logging.INFO, 
 format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -10,6 +8,7 @@ handlers=[logging.FileHandler("rag_pipeline.log", mode="at"),
 logging.StreamHandler()
 ])
 
+from cache_store import get as get_cache, set as set_cache
 from retrieval import retrieve_context
 from router import build_prompt
 from llm_client import call as llm_call

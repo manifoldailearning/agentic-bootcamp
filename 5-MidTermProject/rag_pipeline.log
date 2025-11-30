@@ -722,3 +722,51 @@ Answer:
 2025-11-30 23:01:09,469 - root - INFO - Model output: Generative AI (GenAI) is a type of artificial intelligence that creates new content, like text, images, or code, based on the input it receives.
 2025-11-30 23:01:09,469 - root - INFO - User ID: u2
 2025-11-30 23:01:09,469 - root - INFO - ---------------------------------
+2025-11-30 23:18:13,812 - root - INFO - Redis connection successful
+2025-11-30 23:18:14,571 - root - INFO - Prometheus metrics server running at http://localhost:8002/metrics
+2025-11-30 23:18:50,495 - root - INFO - Running the RAG pipeline for question: What is Gen AI ?
+2025-11-30 23:18:50,497 - root - INFO - Cache HIT for question: What is Gen AI ?
+2025-11-30 23:19:21,107 - root - INFO - Running the RAG pipeline for question: What is Agentic AI ?
+2025-11-30 23:19:21,110 - root - INFO - Cache MISS for question: What is Agentic AI ?
+2025-11-30 23:19:24,806 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 23:19:24,824 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 23:19:26,211 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 23:19:26,216 - root - INFO - Retrieval time: 5105 milliseconds
+2025-11-30 23:19:26,216 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 23:19:26,217 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: What is Agentic AI ?
+
+Answer:
+
+2025-11-30 23:19:26,217 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-30 23:19:26,275 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 23:19:27,400 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 23:19:27,426 - root - INFO - LLM time: 1209 milliseconds
+2025-11-30 23:19:27,426 - root - INFO - Response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 23:19:27,426 - root - INFO - Secured response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 23:19:27,427 - root - INFO - Guardrails applied response: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 23:19:27,430 - root - INFO - Cached response for question: What is Agentic AI ?
+2025-11-30 23:19:27,430 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 23:19:27,430 - root - INFO - Question: What is Agentic AI ?
+2025-11-30 23:19:27,430 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: What is Agentic AI ?
+
+Answer:
+
+2025-11-30 23:19:27,430 - root - INFO - Model output: Agentic AI is an advanced artificial intelligence system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight. It possesses a high degree of autonomy, allowing it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 23:19:27,430 - root - INFO - User ID: user-2
+2025-11-30 23:19:27,430 - root - INFO - ---------------------------------

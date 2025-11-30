@@ -48,7 +48,6 @@ def run_pipeline(question:str):
     llm_latency = int(llm_time * 1000) # convert to milliseconds
     logging.info(f"LLM time: {llm_latency} milliseconds")
     record_metric("genai_llm_latency_ms", llm_latency)
-    log(question, prompt, response) # question + prompt + response
     logging.info(f"Response: {response}")
     response = secured_output(response)
     logging.info(f"Secured response: {response}")
@@ -57,7 +56,7 @@ def run_pipeline(question:str):
     # step 5: cache the response
     set_cache(question, response)
     logging.info(f"Cached response for question: {question}")
-
+    log(question, prompt, response) # question + prompt + response
     return response
     
 

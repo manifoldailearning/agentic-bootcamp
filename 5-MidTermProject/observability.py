@@ -13,12 +13,13 @@ RETRIEVAL_LATENCY = Histogram("genai_retrieval_latency_ms", "Retrieval step late
 #     logging.info(f"User ID: {user_id}")
 #     logging.info(f"Question: {question}")
 
-def log(question, model_input, model_output):
+def log(question, model_input, model_output, user_id=None):
     REQUEST_COUNTER.inc()
     logging.info("Number of requests: {REQUEST_COUNTER}")
     logging.info(f"Question: {question}")
     logging.info(f"Model input: {model_input}") #  question + context
     logging.info(f"Model output: {model_output}")
+    logging.info(f"User ID: {user_id if user_id else 'N/A'}")
     logging.info("---------------------------------")
 
 def record_metric(metric_name, value):

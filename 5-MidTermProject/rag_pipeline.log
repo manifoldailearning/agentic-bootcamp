@@ -495,3 +495,230 @@ Answer:
 2025-11-30 21:05:52,935 - root - INFO - Guardrails applied response: Agentic AI is a type of advanced artificial intelligence that can think for itself, set its own smaller goals, plan how to achieve them, and carry out complex tasks on its own, with little to no help from humans.
 2025-11-30 21:05:52,939 - root - INFO - Cached response for question: What is agentic ai in simple terms?
 2025-11-30 21:05:52,939 - root - INFO - Output: Agentic AI is a type of advanced artificial intelligence that can think for itself, set its own smaller goals, plan how to achieve them, and carry out complex tasks on its own, with little to no help from humans.
+2025-11-30 22:51:40,346 - root - INFO - Redis connection successful
+2025-11-30 22:51:41,180 - root - INFO - Prometheus metrics server running at http://localhost:8002/metrics
+2025-11-30 22:52:30,290 - root - INFO - Running the RAG pipeline for question: What is Gen AI ?
+2025-11-30 22:52:30,293 - root - INFO - Cache MISS for question: What is Gen AI ?
+2025-11-30 22:52:31,319 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:52:31,342 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 22:52:32,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:52:32,191 - root - INFO - Retrieval time: 1896 milliseconds
+2025-11-30 22:52:32,191 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 22:52:32,192 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: What is Gen AI ?
+
+Answer:
+
+2025-11-30 22:52:32,192 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-30 22:52:32,250 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 22:52:33,773 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 22:52:33,797 - root - INFO - LLM time: 1604 milliseconds
+2025-11-30 22:52:33,798 - root - INFO - Response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of diverse and creative content.
+2025-11-30 22:52:33,798 - root - INFO - Secured response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of diverse and creative content.
+2025-11-30 22:52:33,798 - root - INFO - Guardrails applied response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of diverse and creative content.
+2025-11-30 22:52:33,804 - root - INFO - Cached response for question: What is Gen AI ?
+2025-11-30 22:52:33,804 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 22:52:33,804 - root - INFO - Question: What is Gen AI ?
+2025-11-30 22:52:33,804 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: What is Gen AI ?
+
+Answer:
+
+2025-11-30 22:52:33,804 - root - INFO - Model output: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of diverse and creative content.
+2025-11-30 22:52:33,805 - root - INFO - User ID: N/A
+2025-11-30 22:52:33,805 - root - INFO - ---------------------------------
+2025-11-30 22:53:15,162 - root - INFO - Redis connection successful
+2025-11-30 22:53:15,696 - root - INFO - Prometheus metrics server running at http://localhost:8002/metrics
+2025-11-30 22:54:04,751 - root - INFO - Running the RAG pipeline for question: What is gen ai
+2025-11-30 22:54:04,754 - root - INFO - Cache MISS for question: What is gen ai
+2025-11-30 22:54:06,596 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:54:06,613 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 22:54:07,866 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:54:07,872 - root - INFO - Retrieval time: 3117 milliseconds
+2025-11-30 22:54:07,872 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 22:54:07,872 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: What is gen ai
+
+Answer:
+
+2025-11-30 22:54:07,872 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-30 22:54:07,931 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 22:54:09,348 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 22:54:09,363 - root - INFO - LLM time: 1490 milliseconds
+2025-11-30 22:54:09,364 - root - INFO - Response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It uses learned patterns from data to generate original outputs, enabling applications like content creation, design, and more.
+2025-11-30 22:54:09,364 - root - INFO - Secured response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It uses learned patterns from data to generate original outputs, enabling applications like content creation, design, and more.
+2025-11-30 22:54:09,366 - root - INFO - Guardrails applied response: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It uses learned patterns from data to generate original outputs, enabling applications like content creation, design, and more.
+2025-11-30 22:54:09,368 - root - INFO - Cached response for question: What is gen ai
+2025-11-30 22:54:09,369 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 22:54:09,369 - root - INFO - Question: What is gen ai
+2025-11-30 22:54:09,369 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: What is gen ai
+
+Answer:
+
+2025-11-30 22:54:09,369 - root - INFO - Model output: Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It uses learned patterns from data to generate original outputs, enabling applications like content creation, design, and more.
+2025-11-30 22:54:09,369 - root - INFO - User ID: N/A
+2025-11-30 22:54:09,369 - root - INFO - ---------------------------------
+2025-11-30 22:55:42,940 - root - INFO - Redis connection successful
+2025-11-30 22:55:43,489 - root - INFO - Prometheus metrics server running at http://localhost:8002/metrics
+2025-11-30 22:56:01,279 - root - INFO - Running the RAG pipeline for question: what is gen ai explain?
+2025-11-30 22:56:01,282 - root - INFO - Cache MISS for question: what is gen ai explain?
+2025-11-30 22:56:02,410 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:56:02,423 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 22:56:03,888 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:56:03,893 - root - INFO - Retrieval time: 2610 milliseconds
+2025-11-30 22:56:03,894 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 22:56:03,894 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen ai explain?
+
+Answer:
+
+2025-11-30 22:56:03,894 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-30 22:56:03,948 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 22:56:05,489 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 22:56:05,506 - root - INFO - LLM time: 1611 milliseconds
+2025-11-30 22:56:05,506 - root - INFO - Response: Generative AI (GenAI) is a type of artificial intelligence focused on creating new content such as text, images, or code based on input prompts. It uses advanced models to generate original outputs that resemble human-created data, enabling applications like content creation, art, and automation.
+2025-11-30 22:56:05,506 - root - INFO - Secured response: Generative AI (GenAI) is a type of artificial intelligence focused on creating new content such as text, images, or code based on input prompts. It uses advanced models to generate original outputs that resemble human-created data, enabling applications like content creation, art, and automation.
+2025-11-30 22:56:05,507 - root - INFO - Guardrails applied response: Generative AI (GenAI) is a type of artificial intelligence focused on creating new content such as text, images, or code based on input prompts. It uses advanced models to generate original outputs that resemble human-created data, enabling applications like content creation, art, and automation.
+2025-11-30 22:56:05,508 - root - INFO - Cached response for question: what is gen ai explain?
+2025-11-30 22:56:05,508 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 22:56:05,508 - root - INFO - Question: what is gen ai explain?
+2025-11-30 22:56:05,508 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen ai explain?
+
+Answer:
+
+2025-11-30 22:56:05,508 - root - INFO - Model output: Generative AI (GenAI) is a type of artificial intelligence focused on creating new content such as text, images, or code based on input prompts. It uses advanced models to generate original outputs that resemble human-created data, enabling applications like content creation, art, and automation.
+2025-11-30 22:56:05,509 - root - INFO - User ID: u-1
+2025-11-30 22:56:05,509 - root - INFO - ---------------------------------
+2025-11-30 22:57:46,176 - root - INFO - Redis connection successful
+2025-11-30 22:57:46,749 - root - INFO - Prometheus metrics server running at http://localhost:8002/metrics
+2025-11-30 22:58:03,144 - root - INFO - Running the RAG pipeline for question: what is gen
+2025-11-30 22:58:03,146 - root - INFO - Cache MISS for question: what is gen
+2025-11-30 22:58:04,360 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:58:04,379 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 22:58:04,717 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 22:58:04,724 - root - INFO - Retrieval time: 1577 milliseconds
+2025-11-30 22:58:04,724 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 22:58:04,724 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen
+
+Answer:
+
+2025-11-30 22:58:04,725 - root - INFO - Initializing the chat model for gpt-4.1-nano
+2025-11-30 22:58:04,783 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 22:58:05,619 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 22:58:05,641 - root - INFO - LLM time: 916 milliseconds
+2025-11-30 22:58:05,642 - root - INFO - Response: Gen refers to Generative AI (GenAI), which is an AI model focused on creating new content such as text, images, or code based on input prompts.
+2025-11-30 22:58:05,642 - root - INFO - Secured response: Gen refers to Generative AI (GenAI), which is an AI model focused on creating new content such as text, images, or code based on input prompts.
+2025-11-30 22:58:05,642 - root - INFO - Guardrails applied response: Gen refers to Generative AI (GenAI), which is an AI model focused on creating new content such as text, images, or code based on input prompts.
+2025-11-30 22:58:05,644 - root - INFO - Cached response for question: what is gen
+2025-11-30 22:58:05,644 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 22:58:05,644 - root - INFO - Question: what is gen
+2025-11-30 22:58:05,644 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen
+
+Answer:
+
+2025-11-30 22:58:05,644 - root - INFO - Model output: Gen refers to Generative AI (GenAI), which is an AI model focused on creating new content such as text, images, or code based on input prompts.
+2025-11-30 22:58:05,645 - root - INFO - User ID: u2
+2025-11-30 22:58:05,645 - root - INFO - ---------------------------------
+2025-11-30 23:01:06,780 - root - INFO - Running the RAG pipeline for question: what is gen ai in simple terms
+2025-11-30 23:01:06,783 - root - INFO - Cache MISS for question: what is gen ai in simple terms
+2025-11-30 23:01:08,425 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 23:01:08,445 - redisvl.index.index - INFO - Index already exists, not overwriting.
+2025-11-30 23:01:08,795 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 23:01:08,801 - root - INFO - Retrieval time: 2017 milliseconds
+2025-11-30 23:01:08,801 - root - INFO - Built prompt for model: gpt-4.1-nano
+2025-11-30 23:01:08,804 - root - INFO - Prompt:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen ai in simple terms
+
+Answer:
+
+2025-11-30 23:01:08,804 - root - INFO - Calling the chat model for gpt-4.1-nano
+2025-11-30 23:01:09,461 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 23:01:09,465 - root - INFO - LLM time: 661 milliseconds
+2025-11-30 23:01:09,466 - root - INFO - Response: Generative AI (GenAI) is a type of artificial intelligence that creates new content, like text, images, or code, based on the input it receives.
+2025-11-30 23:01:09,466 - root - INFO - Secured response: Generative AI (GenAI) is a type of artificial intelligence that creates new content, like text, images, or code, based on the input it receives.
+2025-11-30 23:01:09,466 - root - INFO - Guardrails applied response: Generative AI (GenAI) is a type of artificial intelligence that creates new content, like text, images, or code, based on the input it receives.
+2025-11-30 23:01:09,468 - root - INFO - Cached response for question: what is gen ai in simple terms
+2025-11-30 23:01:09,468 - root - INFO - Number of requests: {REQUEST_COUNTER}
+2025-11-30 23:01:09,468 - root - INFO - Question: what is gen ai in simple terms
+2025-11-30 23:01:09,469 - root - INFO - Model input:  You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: what is gen ai in simple terms
+
+Answer:
+
+2025-11-30 23:01:09,469 - root - INFO - Model output: Generative AI (GenAI) is a type of artificial intelligence that creates new content, like text, images, or code, based on the input it receives.
+2025-11-30 23:01:09,469 - root - INFO - User ID: u2
+2025-11-30 23:01:09,469 - root - INFO - ---------------------------------

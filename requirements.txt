@@ -12,3 +12,4 @@ pypdf
 langchain-postgres
 langchain_redis
 azure-ai-documentintelligence
+prometheus_client

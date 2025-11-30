@@ -14,6 +14,7 @@ from router import build_prompt
 from llm_client import call as llm_call
 from postprocess import secured_output
 from guardrails import apply_guardrails
+from observability import log, record_metric, start_metrics_server
 
 def run_pipeline(question:str):
     logging.info(f"Running the RAG pipeline for question: {question}")
@@ -33,7 +34,7 @@ def run_pipeline(question:str):
     retrieval_time = end_retrieval_time - start_retrieval_time
     retieval_latency = int(retrieval_time * 1000) # convert to milliseconds
     logging.info(f"Retrieval time: {retieval_latency} milliseconds")
-
+    record_metric("genai_retrieval_latency_ms", retieval_latency)
     # step 3: build the prompt
     model_name, prompt = build_prompt(question, context)
     logging.info(f"Built prompt for model: {model_name}")
@@ -46,6 +47,8 @@ def run_pipeline(question:str):
     llm_time = end_llm_time - start_llm_time
     llm_latency = int(llm_time * 1000) # convert to milliseconds
     logging.info(f"LLM time: {llm_latency} milliseconds")
+    record_metric("genai_llm_latency_ms", llm_latency)
+    log(question, prompt, response) # question + prompt + response
     logging.info(f"Response: {response}")
     response = secured_output(response)
     logging.info(f"Secured response: {response}")
@@ -61,6 +64,7 @@ def run_pipeline(question:str):
 
 
 if __name__ == "__main__":
+    start_metrics_server()
     parser = argparse.ArgumentParser(description="RAG Pipeline")
     parser.add_argument("--question", type=str, required=True, help="Your question to the RAG pipeline")
     args = parser.parse_args()
@@ -70,3 +74,10 @@ if __name__ == "__main__":
     output = run_pipeline(question)
     print(f"Output: {output}")
     logging.info(f"Output: {output}")
+    print("Pipeline completed successfully")
+    print("Keeping the metrics server running...")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("Shutting down metrics server...")

@@ -1,0 +1,165 @@
+2025-11-30 13:50:11,231 ERROR: Error: Error 61 connecting to localhost:6379. Connection refused.
+2025-11-30 13:50:26,596 ERROR: Error: Error 61 connecting to localhost:6379. Connection refused.
+2025-11-30 13:50:36,780 INFO: Redis connection successful
+2025-11-30 13:50:44,440 INFO: Redis connection successful
+2025-11-30 13:51:33,434 INFO: Redis connection successful
+2025-11-30 13:51:33,954 INFO: ✅ Prometheus metrics server running at http://localhost:8005/metrics
+2025-11-30 13:51:33,954 INFO: 🚀 Starting FastAPI server with integrated Prometheus metrics...
+2025-11-30 13:51:33,954 INFO: 📊 Metrics available at http://localhost:8005/metrics
+2025-11-30 13:52:51,474 INFO: Received question: What is Agentic ai?
+2025-11-30 13:52:56,765 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:52:56,785 INFO: Index already exists, not overwriting.
+2025-11-30 13:52:57,700 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:52:57,707 INFO: Retrieved context chars=614 in 6226 ms
+2025-11-30 13:52:57,707 INFO: Assembled prompt for model gpt-4.1-nano
+2025-11-30 13:52:57,707 INFO: Initializing the chat model for gpt-4.1-nano
+2025-11-30 13:52:57,760 INFO: Calling the chat model for gpt-4.1-nano
+2025-11-30 13:52:59,132 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 13:52:59,150 INFO: LLM latency 1442 ms
+2025-11-30 13:52:59,150 WARNING: Banned word detected: die
+2025-11-30 13:52:59,150 INFO: Guardrails applied to text: Agentic AI is an advanced artificial intelligence system that can independently set sub-goals, reason, plan, and execute multiple steps using various tools to achieve a higher-level objective, all with minimal human oversight. It embo[BANNED_CONTENT]s the core characteristic of autonomy, enabling it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 13:52:59,151 INFO: ----------- AUDIT LOG -----------
+2025-11-30 13:52:59,151 INFO: User ID: user-1
+2025-11-30 13:52:59,151 INFO: Question: What is Agentic ai?
+2025-11-30 13:52:59,151 INFO: Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+2025-11-30 13:52:59,151 INFO: Prompt:
+ You are a helpful assistant, answer the questions as best as you can.
+Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+Autonomy: The core characteristic of Agentic AI, referring to the system's ability to operate and make decisions independently without continuous human intervention or step-by-step guidance.
+
+
+Question: What is Agentic ai?
+
+Answer:
+
+2025-11-30 13:52:59,151 INFO: Model Response:
+Agentic AI is an advanced artificial intelligence system that can independently set sub-goals, reason, plan, and execute multiple steps using various tools to achieve a higher-level objective, all with minimal human oversight. It embodies the core characteristic of autonomy, enabling it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 13:52:59,151 INFO: Guardrail Output:
+Agentic AI is an advanced artificial intelligence system that can independently set sub-goals, reason, plan, and execute multiple steps using various tools to achieve a higher-level objective, all with minimal human oversight. It embo[BANNED_CONTENT]s the core characteristic of autonomy, enabling it to operate and make decisions independently without requiring continuous human intervention.
+2025-11-30 13:52:59,151 INFO: Model: gpt-4.1-nano
+2025-11-30 13:52:59,151 INFO: Latency: 7668 ms
+2025-11-30 13:52:59,151 INFO: ---------------------------------
+2025-11-30 13:55:01,171 INFO: Received question: What is Gen AI ?
+2025-11-30 13:55:05,369 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:55:05,384 INFO: Index already exists, not overwriting.
+2025-11-30 13:55:06,227 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:55:06,232 INFO: Retrieved context chars=607 in 5058 ms
+2025-11-30 13:55:06,233 INFO: Assembled prompt for model gpt-4.1-nano
+2025-11-30 13:55:06,233 INFO: Calling the chat model for gpt-4.1-nano
+2025-11-30 13:55:06,974 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 13:55:06,982 INFO: LLM latency 749 ms
+2025-11-30 13:55:06,983 INFO: ----------- AUDIT LOG -----------
+2025-11-30 13:55:06,983 INFO: User ID: user-1
+2025-11-30 13:55:06,983 INFO: Question: What is Gen AI ?
+2025-11-30 13:55:06,983 INFO: Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+2025-11-30 13:55:06,983 INFO: Prompt:
+ You are a helpful assistant, answer the questions as best as you can.
+Context: Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+Agentic AI: An advanced AI system capable of autonomously setting sub-goals, reasoning, planning, and executing multi-step actions using various tools to achieve a higher-level objective with minimal human oversight.
+
+AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+
+Question: What is Gen AI ?
+
+Answer:
+
+2025-11-30 13:55:06,983 INFO: Model Response:
+Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of creative and diverse content.
+2025-11-30 13:55:06,983 INFO: Guardrail Output:
+Generative AI (GenAI) is an AI model focused on creating new content such as text, images, or code based on input prompts. It is designed to generate original outputs by learning patterns from existing data, enabling the production of creative and diverse content.
+2025-11-30 13:55:06,983 INFO: Model: gpt-4.1-nano
+2025-11-30 13:55:06,984 INFO: Latency: 5807 ms
+2025-11-30 13:55:06,984 INFO: ---------------------------------
+2025-11-30 13:55:39,152 INFO: Received question: Who is agent ?
+2025-11-30 13:55:40,132 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:55:40,142 INFO: Index already exists, not overwriting.
+2025-11-30 13:55:41,394 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:55:41,401 INFO: Retrieved context chars=585 in 2246 ms
+2025-11-30 13:55:41,401 INFO: Assembled prompt for model gpt-4.1-nano
+2025-11-30 13:55:41,401 INFO: Calling the chat model for gpt-4.1-nano
+2025-11-30 13:55:42,668 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 13:55:42,678 INFO: LLM latency 1277 ms
+2025-11-30 13:55:42,679 INFO: ----------- AUDIT LOG -----------
+2025-11-30 13:55:42,679 INFO: User ID: user-1
+2025-11-30 13:55:42,679 INFO: Question: Who is agent ?
+2025-11-30 13:55:42,681 INFO: Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Multi-agent System: An architecture involving two or more specialized AI agents that communicate and collaborate under a supervisory agent or orchestration framework to complete a single, large workflow.
+
+Adaptability: The agent's ability to dynamically adjust its plans, strategies, and actions based on changing conditions or unexpected outcomes encountered in its environment.
+2025-11-30 13:55:42,682 INFO: Prompt:
+ You are a helpful assistant, answer the questions as best as you can.
+Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Multi-agent System: An architecture involving two or more specialized AI agents that communicate and collaborate under a supervisory agent or orchestration framework to complete a single, large workflow.
+
+Adaptability: The agent's ability to dynamically adjust its plans, strategies, and actions based on changing conditions or unexpected outcomes encountered in its environment.
+
+
+Question: Who is agent ?
+
+Answer:
+
+2025-11-30 13:55:42,682 INFO: Model Response:
+An agent is a fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals.
+2025-11-30 13:55:42,682 INFO: Guardrail Output:
+An agent is a fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals.
+2025-11-30 13:55:42,682 INFO: Model: gpt-4.1-nano
+2025-11-30 13:55:42,682 INFO: Latency: 3523 ms
+2025-11-30 13:55:42,682 INFO: ---------------------------------
+2025-11-30 13:56:23,610 INFO: Received question: What is Rag ?
+2025-11-30 13:56:24,040 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:56:24,054 INFO: Index already exists, not overwriting.
+2025-11-30 13:56:25,725 INFO: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-30 13:56:25,734 INFO: Retrieved context chars=569 in 2122 ms
+2025-11-30 13:56:25,734 INFO: Assembled prompt for model gpt-4.1-nano
+2025-11-30 13:56:25,734 INFO: Calling the chat model for gpt-4.1-nano
+2025-11-30 13:56:26,628 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-30 13:56:26,631 INFO: LLM latency 896 ms
+2025-11-30 13:56:26,631 INFO: ----------- AUDIT LOG -----------
+2025-11-30 13:56:26,631 INFO: User ID: user-2
+2025-11-30 13:56:26,632 INFO: Question: What is Rag ?
+2025-11-30 13:56:26,632 INFO: Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Memory: The mechanism that allows an AI agent to store and retrieve past interactions, states, and context over time to ensure task continuity and improve future decision-making.
+
+Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+2025-11-30 13:56:26,632 INFO: Prompt:
+ You are a helpful assistant, answer the questions as best as you can.
+Context: AI Agent: A fundamental software entity that continuously perceives its environment, reasons about the information, and takes actions to achieve specific goals. They are the building blocks of agentic AI.
+
+Memory: The mechanism that allows an AI agent to store and retrieve past interactions, states, and context over time to ensure task continuity and improve future decision-making.
+
+Generative AI (GenAI): An AI model focused on the creation of new content (text, images, code) based on input prompts. Agentic AI often uses GenAI models as its 'brain' for reasoning.
+
+
+Question: What is Rag ?
+
+Answer:
+
+2025-11-30 13:56:26,632 INFO: Model Response:
+RAG stands for Retrieval-Augmented Generation. It is a technique that combines retrieval of relevant information from external sources with generative AI models to produce more accurate and contextually informed responses. In this approach, the AI retrieves pertinent data or documents from a knowledge base and then uses a generative model to synthesize a coherent answer, enhancing the quality and factuality of the output.
+2025-11-30 13:56:26,632 INFO: Guardrail Output:
+RAG stands for Retrieval-Augmented Generation. It is a technique that combines retrieval of relevant information from external sources with generative AI models to produce more accurate and contextually informed responses. In this approach, the AI retrieves pertinent data or documents from a knowledge base and then uses a generative model to synthesize a coherent answer, enhancing the quality and factuality of the output.
+2025-11-30 13:56:26,632 INFO: Model: gpt-4.1-nano
+2025-11-30 13:56:26,632 INFO: Latency: 3018 ms
+2025-11-30 13:56:26,632 INFO: ---------------------------------
+2025-11-30 13:56:40,087 INFO: Received question: What is Rag ?
+2025-11-30 13:56:40,088 INFO: Cache hit
+2025-11-30 13:57:01,989 INFO: Redis connection successful
+2025-11-30 13:57:02,708 INFO: ✅ Prometheus metrics server running at http://localhost:8005/metrics
+2025-11-30 13:57:02,708 INFO: 🚀 Starting FastAPI server with integrated Prometheus metrics...
+2025-11-30 13:57:02,708 INFO: 📊 Metrics available at http://localhost:8005/metrics

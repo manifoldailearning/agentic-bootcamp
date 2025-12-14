@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "python": {
+            "packages": [
+                "fastapi",
+                "uvicorn[standard]",
+                "langgraph",
+                "langchain-openai",
+                "langchain-google",
+                "pydantic",
+                "python-dotenv"
+            ]
+        }
+    },
+    "graphs": {
+        "my_agent": {
+            "path": "my_agent/graph.py:agent"
+        }
+    },
+    "env": "./.env"
+    }

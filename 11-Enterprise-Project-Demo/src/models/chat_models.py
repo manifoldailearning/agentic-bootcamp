@@ -4,6 +4,9 @@ from sqlalchemy.orm import relationship
 import enum
 from .base import BaseModel
 from datetime import datetime
+# https://docs.sqlalchemy.org/en/20/orm/basic_relationships.html
+# id = Column(String, primary_key=True) # String Primary Key, UUID is a good choice for this
+# id = Column(UUID, primary_key=True, default=uuid.uuid4) # UUID Primary Key, UUID is a good choice for this
 
 
 class MessageRole(str, enum.Enum):

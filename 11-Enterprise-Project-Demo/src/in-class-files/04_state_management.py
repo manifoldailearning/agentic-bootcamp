@@ -31,7 +31,7 @@ def demonstrate_wrong_way():
     
     state = {"data": "test", "processed": False, "errors": []}
     print("\n❌ WRONG: Mutating state directly")
-    print("   state['processed'] = Truse  # This will cause errors!")
+    print("   state['processed'] = True  # This will cause errors!")
     print("   return state  # LangGraph will reject this")
     
     print("\n   Why it's wrong:")
